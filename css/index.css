@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.gallery{
+    position: relative;
+    padding: 60px 40px ;
+    margin: auto;
+}
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    
+}
+.images .image{
+    display: flex;
+    overflow: hidden;
+    width: 378px;
+    height: 212px;
+}
+.images .image img{
+    width: 100%;
+    height: auto;
+    transition: 0.3s ease-in-out;
+}
+.images .image img:hover{
+    transform: scale(1.2,1.2);
+    cursor: zoom-in;
+}
+.slider{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    gap: 40%;
+    display: none;
+    transition: all .4s ease-in-out;
+}
+.show{
+    display: block;
+    transform: translate(-50%, -50%);
+}
+.slide-show{
+    display: flex;
+    color: #c2bbbbe3;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.slide-show .exit i{
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+}
+.slide-show .exit i:hover{
+    color: white;
+}
+.next-prev{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.prev .btn,
+.next .btn{
+   display: block;
+   border: none;
+   background-color: transparent;
+   color: #ffffff;
+   font-size: 20px;
+   cursor: pointer;
+   padding: 20px;
+}
+.next-prev .prev,
+.next-prev .next {
+    width: 80px;
+    position: absolute;
+    top: 50%;
+}
+.next-prev .prev{
+    left: 20px;
+}
+.next-prev .next {
+    right: 20px;
+}
+.slide-image{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    width: 100%;
+    
+}
+.slide-image img{
+    max-height: 80vh;
+    cursor: zoom-in;
+}
