@@ -9,7 +9,6 @@ images.forEach((img , i) =>
 img.addEventListener("click", (event) =>{
    slideShow(i);
    slider.classList.add("show");
-   slideImage.setAttribute("src", img.src);
 }),
 );
 exit.addEventListener("click", (event) =>{
@@ -17,7 +16,7 @@ exit.addEventListener("click", (event) =>{
 });
 
 const slideShow = (i)=> {
-   slideImage.src = images[i].src
+   slideImage.src = images[i].src;
    count.innerHTML = `${i+1}`;
    index = i;
 }
