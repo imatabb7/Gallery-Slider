@@ -12,8 +12,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
-    
+    gap: 15px;  
 }
 .images .image{
     display: flex;
@@ -51,7 +50,6 @@
     justify-content: space-between;
     padding: 20px;
 }
-
 .slide-show .exit i{
     cursor: pointer;
     font-size: 20px;
@@ -91,8 +89,7 @@
     display: flex;
     justify-content: center;    
     align-items: center;
-    width: 100%;
-    
+    width: 100%;    
 }
 .slide-image img{
     max-height: 80vh;

@@ -14,7 +14,6 @@ img.addEventListener("click", (event) =>{
 exit.addEventListener("click", (event) =>{
    slider.classList.remove("show");
 });
-
 const slideShow = (i)=> {
    slideImage.src = images[i].src;
    count.innerHTML = `${i+1}`;
@@ -27,7 +26,6 @@ prev.addEventListener("click", () => {
    else if (index > 0){
       slideShow(index -1 );
    }
-   
 });
 next.addEventListener("click", () => {
    if(index >= images.length - 1){
@@ -36,7 +34,6 @@ next.addEventListener("click", () => {
     else if (index < images.length - 1){
       slideShow(index+1);
    }
-
 });
 
 
